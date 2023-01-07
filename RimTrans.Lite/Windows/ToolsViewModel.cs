@@ -30,7 +30,7 @@ namespace RimTrans.Lite.Windows
             get { return _commandTemplateExport ?? (_commandTemplateExport = new RelayCommand(ExecuteTemplateExport, CanExecuteExport)); }
         }
         private void ExecuteTemplateExport(object parameter) {
-            string defsPath = Path.Combine(UserSettings.All.RimWorldInstallDir, "Mods", "Core", "Defs");
+            string defsPath = Path.Combine(UserSettings.All.RimWorldInstallDir, "Data", "Core", "Defs");
             string outputPath = UserSettings.All.DefTemplateOutputPath;
             string arguments = $"\"{defsPath}\" \"{outputPath}\"";
             if (UserSettings.All.DefTemplateOpenFolder) {

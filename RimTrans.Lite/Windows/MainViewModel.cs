@@ -260,7 +260,7 @@ namespace RimTrans.Lite.Windows
             string corePath =
                 string.IsNullOrWhiteSpace(UserSettings.All.RimWorldInstallDir) ?
                 string.Empty :
-                Path.Combine(UserSettings.All.RimWorldInstallDir, "Mods", "Core");
+                Path.Combine(UserSettings.All.RimWorldInstallDir, "Data", "Core");
             string dllPath =
                 string.IsNullOrWhiteSpace(UserSettings.All.RimWorldInstallDir) ?
                 string.Empty :

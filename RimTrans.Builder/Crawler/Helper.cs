@@ -8,8 +8,6 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
-using RimWorld;
-using Verse;
 
 namespace RimTrans.Builder.Crawler {
     /// <summary>
@@ -129,12 +127,16 @@ namespace RimTrans.Builder.Crawler {
         /// <summary>
         /// Class Def is the base class of all DefType classes
         /// </summary>
-        public readonly static Type ClassDef = typeof(Def);
+        public readonly static Type ClassDef = TypeLoader.Load("Verse.Def");
+
+        public readonly static Type ClassDefaultValueAttribute = TypeLoader.Load("Verse.DefaultValueAttribute");
+        public readonly static Type ClassDescriptionAttribute = TypeLoader.Load("Verse.DescriptionAttribute");
+        public readonly static Type ClassLoadAliasAttribute = TypeLoader.Load("Verse.LoadAliasAttribute");
 
         /// <summary>
         /// All DefType classes
         /// </summary>
-        public readonly static IEnumerable<Type> AllClassesDef = typeof(Def).AllSubclasses();
+        public readonly static IEnumerable<Type> AllClassesDef = ClassDef.AllSubclasses();
 
         /// <summary>
         /// Decompiled source code directory of Assembly-CSharp.dll
@@ -249,7 +251,7 @@ namespace RimTrans.Builder.Crawler {
                 return null;
 
             string result = null;
-            DefaultValueAttribute defaultValueAttribute = fieldInfo.GetCustomAttribute<DefaultValueAttribute>();
+            dynamic defaultValueAttribute = fieldInfo.GetCustomAttribute(ClassDefaultValueAttribute);
             if (defaultValueAttribute != null) {
                 if (defaultValueAttribute.value == null) {
                     result = null;
@@ -303,7 +305,7 @@ namespace RimTrans.Builder.Crawler {
             if (fieldInfo == null)
                 return null;
 
-            DescriptionAttribute descriptionAtrribute = fieldInfo.GetCustomAttribute<DescriptionAttribute>();
+            dynamic descriptionAtrribute = fieldInfo.GetCustomAttribute(ClassDescriptionAttribute);
             if (descriptionAtrribute != null)
                 return descriptionAtrribute.description.Replace("\n", "\\n");
             return null;
@@ -318,7 +320,7 @@ namespace RimTrans.Builder.Crawler {
             if (fieldInfo == null)
                 return null;
 
-            LoadAliasAttribute loadAliasAttribute = fieldInfo.GetCustomAttribute<LoadAliasAttribute>();
+            dynamic loadAliasAttribute = fieldInfo.GetCustomAttribute(ClassLoadAliasAttribute);
             if (loadAliasAttribute != null)
                 return loadAliasAttribute.alias;
             return null;

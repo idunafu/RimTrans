@@ -98,6 +98,7 @@ namespace RimTrans.Trans
 
             string projectFile = null;
             string corePath = null;
+            string dllPath = null;
             bool cleanModeOn = false;
             string modPath = null;
             string generateOption = null;
@@ -111,6 +112,10 @@ namespace RimTrans.Trans
                 else if (argument.StartsWith("-Core:") && argument.Length > 6)
                 {
                     corePath = argument.Substring(6);
+                }
+                else if (argument.StartsWith("-Dll:") && argument.Length > 5)
+                {
+                    dllPath = argument.Substring(5);
                 }
                 else if (argument == "-Clean")
                 {
@@ -128,6 +133,18 @@ namespace RimTrans.Trans
                 Console.ReadKey();
                 return;
             }
+
+            // Check DLL Path
+            if (string.IsNullOrWhiteSpace(dllPath) || !File.Exists(dllPath))
+            {
+                Log.Error();
+                Log.WriteLine(ConsoleColor.Red, $"DLL {dllPath} NO FOUND.");
+                Log.WriteLine();
+                Console.Write("Press any key to exit...");
+                Console.ReadKey();
+                return;
+            }
+            TypeLoader.Init(dllPath);
 
             Log.WriteLine(ConsoleColor.Green, $"======== Start Project  {FaceGood()} ========");
             Log.WriteLine();

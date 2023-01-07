@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Verse;
-using RimWorld;
+using RimTrans.Builder.Crawler;
 
 namespace RimTrans.Builder.Xml {
     public static class DefTypeNameOf {
         private static IEnumerable<string> getAllNames() {
-            Type typeDef = typeof(Def);
+            Type typeDef = Helper.ClassDef;
             yield return typeDef.Name;
             foreach (Type subclass in typeDef.AllSubclasses()) {
                 yield return subclass.Name;

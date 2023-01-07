@@ -261,10 +261,14 @@ namespace RimTrans.Lite.Windows
                 string.IsNullOrWhiteSpace(UserSettings.All.RimWorldInstallDir) ?
                 string.Empty :
                 Path.Combine(UserSettings.All.RimWorldInstallDir, "Mods", "Core");
+            string dllPath =
+                string.IsNullOrWhiteSpace(UserSettings.All.RimWorldInstallDir) ?
+                string.Empty :
+                Path.Combine(UserSettings.All.RimWorldInstallDir, "RimWorldWin64_Data", "Managed", "Assembly-CSharp.dll");
             var selectedMod = _selectedMod;
             SelectedMod = null;
 
-            string arguments = $"\"-p:{projectFile}\" -Core:\"{corePath}\"";
+            string arguments = $"\"-p:{projectFile}\" -Core:\"{corePath}\" -Dll:\"{dllPath}\"";
 
             var window = new ExtractWindow();
             window.SelectedMod = selectedMod;

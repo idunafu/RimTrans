@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RimWorld;
-using Verse;
 
 namespace RimTrans.Builder.Crawler {
     /// <summary>
@@ -22,8 +20,8 @@ namespace RimTrans.Builder.Crawler {
                 "        public static readonly string Def = \"Def\";" :
                 "Def");
             var allSubDefTypes = sorting ?
-                typeof(Def).AllSubclasses().OrderBy(t => t.Name).ToList() :
-                typeof(Def).AllSubclasses();
+                Helper.ClassDef.AllSubclasses().OrderBy(t => t.Name).ToList() :
+                Helper.ClassDef.AllSubclasses();
             foreach (Type curDefType in allSubDefTypes) {
                 sb.AppendLine(formating ?
                     $"        public static readonly string {curDefType.Name} = \"{curDefType.Name}\";" :

@@ -6,9 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
-using RimWorld;
-using Verse;
-using UnityEngine;
 
 using RimTrans.Builder.Xml;
 

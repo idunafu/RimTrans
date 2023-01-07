@@ -73,7 +73,7 @@ namespace RimTrans.Lite.Util
             Default = Application.Current.Resources.MergedDictionaries.FirstOrDefault(d => d.Source.OriginalString.EndsWith("/DefaultSettings.xaml"));
 
             // AppData settings file path
-            string settings = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "RimTrans", "Settings.xaml");
+            string settings = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "RimTrans_Nonnonstop", "Settings.xaml");
 
             // Check AppData settings file existing
             if (!File.Exists(settings))
@@ -99,7 +99,7 @@ namespace RimTrans.Lite.Util
         {
             if (_appData == null) return;
 
-            string settings = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "RimTrans", "Settings.xaml");
+            string settings = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "RimTrans_Nonnonstop", "Settings.xaml");
 
             string dir = Path.GetDirectoryName(settings);
 

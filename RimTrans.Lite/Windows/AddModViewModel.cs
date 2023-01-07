@@ -83,7 +83,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "ChineseSimplified";
                 langItem.NativeName = "简体中文";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -94,7 +94,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "ChineseTraditional";
                 langItem.NativeName = "繁體中文";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -105,7 +105,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "Czech";
                 langItem.NativeName = "Čeština";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -116,7 +116,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "Danish";
                 langItem.NativeName = "Dansk";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -127,7 +127,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "Dutch";
                 langItem.NativeName = "Nederlands";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -138,7 +138,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "English";
                 langItem.NativeName = "English";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -149,7 +149,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "Estonian";
                 langItem.NativeName = "Eesti";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -160,7 +160,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "Finnish";
                 langItem.NativeName = "Suomi";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -171,7 +171,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "French";
                 langItem.NativeName = "Français";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -182,7 +182,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "German";
                 langItem.NativeName = "Deutsch";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -193,7 +193,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "Hungarian";
                 langItem.NativeName = "Magyar";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -204,7 +204,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "Italian";
                 langItem.NativeName = "Italiano";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -215,7 +215,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "Japanese";
                 langItem.NativeName = "日本語";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -226,7 +226,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "Korean";
                 langItem.NativeName = "한국어";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -237,7 +237,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "Norwegian";
                 langItem.NativeName = "Norsk Bokmål";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -248,7 +248,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "Polish";
                 langItem.NativeName = "Polski";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -259,7 +259,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "Portuguese";
                 langItem.NativeName = "Português";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -270,7 +270,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "PortugueseBrazilian";
                 langItem.NativeName = "Português Brasileiro";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -281,7 +281,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "Romanian";
                 langItem.NativeName = "Română";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -292,7 +292,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "Russian";
                 langItem.NativeName = "Русский";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -303,7 +303,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "Slovak";
                 langItem.NativeName = "Slovenčina";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -314,7 +314,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "Spanish";
                 langItem.NativeName = "Español(Castellano)";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -325,7 +325,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "SpanishLatin";
                 langItem.NativeName = "Español(Latinoamérica)";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -336,7 +336,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "Swedish";
                 langItem.NativeName = "Svenska";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -347,7 +347,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "Turkish";
                 langItem.NativeName = "Türkçe";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }
@@ -358,7 +358,7 @@ namespace RimTrans.Lite.Windows
                 langItem.RealName = "Ukrainian";
                 langItem.NativeName = "Українська";
                 langItem.IsCustom = false;
-                langItem.CustomPath = langItem.LangPath;
+                langItem.CustomPath = _selectedMod.ModPath;
                 langItem.IsChecked = true;
                 languages.Add(langItem);
             }

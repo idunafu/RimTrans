@@ -181,7 +181,7 @@
                     <StackPanel>
                         <c:LabelTextBlockBox Label="{DynamicResource Common.Language}" Text="{Binding SelectedLanguage.RealName}" Margin="0,2"/>
                         <c:LabelTextBlockBox Label="{DynamicResource Common.Name}" Text="{Binding SelectedLanguage.NativeName}" Margin="0,2"/>
-                        <c:LabelTextBlockBox Label="{DynamicResource Common.Path}" Text="{Binding SelectedLanguage.LangPath}"
+                        <c:LabelTextBlockBox Label="{DynamicResource Common.Path}" Text="{Binding SelectedMod.ModPath}"
                                              IsEnabled="{Binding SelectedLanguage.IsCustom, Converter={StaticResource InverseBooleanConverter}}"
                                              Margin="0,2"/>
                         <Separator VerticalAlignment="Top" Margin="0,10" Style="{StaticResource Style.Separator.Horizontal}"/>

@@ -16,7 +16,7 @@ namespace RimTrans.Lite.Windows
     {
         public MainViewModel()
         {
-            this._projectsDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "RimTrans", "Projects");
+            this._projectsDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "RimTrans_Nonnonstop", "Projects");
             var mods = new ObservableCollection<ModListBoxItem>();
             if (Directory.Exists(_projectsDir))
             {
@@ -203,7 +203,7 @@ namespace RimTrans.Lite.Windows
                     langItem.RealName = realName;
                     langItem.NativeName = nativeName;
                     langItem.IsCustom = false;
-                    langItem.CustomPath = langItem.LangPath;
+                    langItem.CustomPath = _selectedMod.ModPath;
                     langItem.IsChecked = true;
                     languages.Add(langItem);
                 }

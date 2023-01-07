@@ -53,3 +53,5 @@ using System.Windows;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("0.18.2.6")]
 [assembly: AssemblyFileVersion("0.18.2.6")]
+
+[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("windows")]

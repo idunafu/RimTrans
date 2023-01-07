@@ -22,7 +22,7 @@ namespace RimTrans.Builder.Crawler {
                 "        public static readonly string Def = \"Def\";" :
                 "Def");
             var allSubDefTypes = sorting ?
-                typeof(Def).AllSubclasses().OrderBy(t => t.Name) :
+                typeof(Def).AllSubclasses().OrderBy(t => t.Name).ToList() :
                 typeof(Def).AllSubclasses();
             foreach (Type curDefType in allSubDefTypes) {
                 sb.AppendLine(formating ?

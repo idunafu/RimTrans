@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -9,9 +8,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RimTrans.Builder</RootNamespace>
     <AssemblyName>RimTransBuilder</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,42 +42,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>D:\Games\SteamLibrary\steamapps\common\RimWorld\RimWorldWin_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>E:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
     </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
-      <HintPath>D:\Games\SteamLibrary\steamapps\common\RimWorld\RimWorldWin_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>E:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>false</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Crawler\Capture.cs" />
-    <Compile Include="Crawler\DefTypeCrawler.cs" />
-    <Compile Include="Crawler\Helper.cs" />
-    <Compile Include="Crawler\DefInfo.cs" />
-    <Compile Include="Crawler\TagCategory.cs" />
-    <Compile Include="Crawler\TagInfo.cs" />
-    <Compile Include="DefinitionData.cs" />
-    <Compile Include="InjectionData.cs" />
-    <Compile Include="KeyedData.cs" />
-    <Compile Include="Log.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DirectoryHelper.cs" />
-    <Compile Include="Xml\DefTypeNameOf.cs" />
-    <Compile Include="Xml\DocHelper.cs" />
-    <Compile Include="Xml\LangCodeHelper.cs" />
-    <Compile Include="Xml\FieldNameOf.cs" />
-    <Compile Include="Xml\ThingCategoryOf.cs" />
-    <Compile Include="Xml\XmlHelper.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Recourses\Logo_Cubes.ico" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

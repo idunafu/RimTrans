@@ -34,3 +34,5 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("0.18.2.5")]
 [assembly: AssemblyFileVersion("0.18.2.5")]
+
+[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("windows")]

@@ -1,15 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Security.AccessControl;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
-using System.Xml.Linq;
-using RimTrans.Builder.Xml;
 
-namespace RimTrans.Builder {
+namespace RimTrans.Builder
+{
     public static class DirectoryHelper {
         /// <summary>
         /// Delete Empty Directory Recursively

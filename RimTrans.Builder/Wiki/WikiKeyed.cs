@@ -4,14 +4,11 @@ using System.Linq;
 using System.IO;
 using System.Text;
 using System.Security.AccessControl;
-using System.Threading.Tasks;
-using System.Xml;
 using System.Xml.Linq;
-
-using RimTrans.Builder;
 using RimTrans.Builder.Xml;
 
-namespace RimTrans.Builder.Wiki {
+namespace RimTrans.Builder.Wiki
+{
     public class WikiKeyed {
         private static readonly UTF8Encoding utf8 = new UTF8Encoding(false);
 

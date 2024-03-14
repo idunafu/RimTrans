@@ -280,7 +280,7 @@ namespace RimTrans.Trans
         {
             var loadFoldersPath = Path.Combine(modPath, "LoadFolders.xml");
             var dirNames = new[] {
-                "", "Common", "1.0", "1.1", "1.2", "1.3", "1.4"
+                "", "Common", "1.0", "1.1", "1.2", "1.3", "1.4", "1.5", "Biotech", "Ideology", "Royalty"
             };
             if (File.Exists(loadFoldersPath))
             {

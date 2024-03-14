@@ -1,6 +1,5 @@
-﻿using System;
-
-namespace RimTrans.Builder.Xml {
+﻿namespace RimTrans.Builder.Xml
+{
     public static class ThingCategoryOf {
         public static string None = "None";
         public static string Pawn = "Pawn";

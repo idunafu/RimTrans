@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace RimTrans.Builder.Xml {
+namespace RimTrans.Builder.Xml
+{
     public static class DocHelper {
         public static XDocument EmptyDoc() {
             return XDocument.Parse("<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LanguageData>\r\n\r\n</LanguageData>", LoadOptions.PreserveWhitespace);

@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace RimTrans.Builder.Crawler {
+namespace RimTrans.Builder.Crawler
+{
     /// <summary>
     /// Get all DefTypes for coding the source file 'DefTypeNameOf.cs'.
     /// </summary>

@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
 using System.Xml.Linq;
-
-using RimTrans.Builder.Xml;
 using RimTrans.Builder.Crawler;
 
-namespace RimTrans.Builder.Wiki {
+namespace RimTrans.Builder.Wiki
+{
     public class SetDict {
         private static readonly UTF8Encoding utf8 = new UTF8Encoding(false);
 

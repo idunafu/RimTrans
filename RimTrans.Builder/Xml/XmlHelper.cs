@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.IO;
 using System.Text;
-using System.Xml;
 using System.Xml.Linq;
 
-namespace RimTrans.Builder.Xml {
+namespace RimTrans.Builder.Xml
+{
     public static class XmlHelper {
         #region Def and Field extensions
 

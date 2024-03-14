@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace RimTrans.Builder.Xml {
+namespace RimTrans.Builder.Xml
+{
     public static class LangCodeHelper {
         private static readonly Dictionary<string, string> langCodesDict = new Dictionary<string, string> {
             { "ChineseSimplified", "zh-cn" },

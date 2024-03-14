@@ -2,17 +2,13 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Reflection;
 using System.Security.AccessControl;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Xml;
 using System.Xml.Linq;
 
 using RimTrans.Builder.Xml;
 
-namespace RimTrans.Builder.Crawler {
+namespace RimTrans.Builder.Crawler
+{
     public class Capture {
         /// <summary>
         /// If true, distinguish ThingDef category.

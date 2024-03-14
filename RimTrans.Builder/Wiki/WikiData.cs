@@ -5,14 +5,13 @@ using System.IO;
 using System.Linq;
 using System.Security.AccessControl;
 using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
 using System.Xml.Linq;
 
 using RimTrans.Builder.Xml;
 using RimTrans.Builder.Crawler;
 
-namespace RimTrans.Builder.Wiki {
+namespace RimTrans.Builder.Wiki
+{
     /// <summary>
     /// For craating wiki data.
     /// </summary>

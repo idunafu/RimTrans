@@ -4,9 +4,9 @@ using System.Linq;
 using System.IO;
 using System.Security.AccessControl;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace RimTrans.Builder.Wiki {
+namespace RimTrans.Builder.Wiki
+{
     public static class WikiTextures {
         public static void Build(string source, string destination, string luaPath) {
             if (!Directory.Exists(source)) {

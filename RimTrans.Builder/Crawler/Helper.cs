@@ -5,11 +5,10 @@ using System.IO;
 using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Xml;
 using System.Xml.Linq;
 
-namespace RimTrans.Builder.Crawler {
+namespace RimTrans.Builder.Crawler
+{
     /// <summary>
     /// Privode some methods.
     /// </summary>

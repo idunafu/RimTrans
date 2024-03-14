@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 
 using RimTrans.Builder.Xml;
 
-namespace RimTrans.Builder.Crawler {
+namespace RimTrans.Builder.Crawler
+{
     /// <summary>
     /// Storage Def info, included tags and fields.
     /// </summary>

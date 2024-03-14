@@ -1,6 +1,5 @@
-﻿using System;
-
-namespace RimTrans.Builder.Xml {
+﻿namespace RimTrans.Builder.Xml
+{
     public static class FieldNameOf {
         //public static string fieldName = "fieldName";
         public static string defName = "defName";

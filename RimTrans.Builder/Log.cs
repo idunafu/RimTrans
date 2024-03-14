@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace RimTrans.Builder {
+namespace RimTrans.Builder
+{
     public static class Log {
 
         static Log() {
